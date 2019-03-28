@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <checkout_onepage_success>
+        <reference name="before_body_end">
+            <block type="lcb_opineo/checkout_onepage_success" name="lcb_opineo" template="opineo/checkout/onepage/success.phtml"/>
+        </reference>
+    </checkout_onepage_success>
+</layout>

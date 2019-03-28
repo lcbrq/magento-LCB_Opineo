@@ -1,0 +1,4 @@
+app/code/local/LCB/Opineo
+app/design/frontend/base/default/layout/lcb_opineo.xml
+app/design/frontend/base/default/template/opineo
+app/etc/modules/LCB_Opineo.xml

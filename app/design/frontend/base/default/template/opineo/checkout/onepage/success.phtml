@@ -1,0 +1,18 @@
+<?php
+/**
+ * @var $this LCB_Opineo_Block_Checkout_Onepage_Success
+ */
+$order = $this->getOrder();
+?>
+<!-- Opineo Code -->
+<script type="text/javascript">
+opi_email = '<?php echo $order->getCustomerEmail(); ?>';
+opi_order_no = '<?php echo $order->getIncrementId(); ?>';
+opi_queue = '<?php echo $this->getOpiQueue(); ?>';
+opi_products = [
+    <?php foreach($order->getAllVisibleItems() as $item): ?>
+    ['<?php echo $item->getProduct()->getManufacturer(); ?>', '', '<?php echo $item->getSku(); ?>', '0'],
+    <?php endforeach; ?>
+];
+</script>
+<script type="text/javascript" src="https://www.wiarygodneopinie.pl/shop/wo.js?uid=<?php echo $this->getUid(); ?>"></script>

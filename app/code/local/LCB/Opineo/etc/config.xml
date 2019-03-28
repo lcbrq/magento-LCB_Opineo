@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <LCB_Opineo>
+            <version>0.1.0</version>
+        </LCB_Opineo>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <lcb_opineo>
+                    <file>lcb_opineo.xml</file>
+                </lcb_opineo>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <helpers>
+            <lcb_opineo>
+                <class>LCB_Opineo_Helper</class>
+            </lcb_opineo>
+        </helpers>
+        <blocks>
+            <lcb_opineo>
+                <class>LCB_Opineo_Block</class>
+            </lcb_opineo>
+        </blocks>
+    </global>
+    <default>
+        <lcb_opineo>
+            <settings>
+                <opi_queue>5</opi_queue>
+            </settings>
+        </lcb_opineo>
+    </default>
+</config> 
