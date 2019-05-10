@@ -32,7 +32,7 @@ class LCB_Opineo_Block_Checkout_Onepage_Success extends Mage_Checkout_Block_Onep
      * @return Mage_Sales_Model_Order
      */
     public function getOrder() {
-        return Mage::getModel('sales/order')->load($this->getOrderId());
+        return Mage::getModel('sales/order')->load($this->getOrderId(), 'increment_id');
     }
 
     /**
